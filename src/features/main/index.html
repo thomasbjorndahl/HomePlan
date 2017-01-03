@@ -8,12 +8,39 @@
     </div>
     <div class="panel body">
         <div class="row">
-            <div ng-repeat="person in vm.tasks()" class="col-sm-4">
+            <div ng-repeat="person in vm.peopleTasks()" class="col-sm-4">
                 <div class="panel">
                     <div class="well" ng-style="{ 'background-color' : person.color }">
-                        <h2 class="text-center">
-                            <span ng-bind="person.name"></span>
-                        </h2>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <h2 class="text-center">
+                                    <span ng-bind="person.name"></span>
+                                </h2>
+                            </div>
+                            <div class="col-sm-8">
+                                Bursdag: 
+                                <span ng-bind="person.timeToBirthday"></span>
+                            </div>
+                        </div>
+                        
+
+                        <div ng-repeat="task in person.tasks" class="well">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h3>
+                                        <span class="{{task.taskType.icon}}"></span>
+                                    </h3>
+                                </div>
+                                <div class="col-sm-9">
+                                    <h4>
+                                        <span ng-bind="task.title"></span>
+                                    </h4>
+                                    <div ng-bind="task.comment"></div>
+                                </div>
+                            </div>
+                           
+                        </div>
+
                     </div>
                 </div>
             </div>
