@@ -1,0 +1,12 @@
+{
+    "name" : "Homeplan",
+    "version": "1.0",
+    "description": "A home planner for the family",
+    "author": {
+        "email": "microsoft@vare.no",
+        "name": "Thomas Bjørndahl"
+    },
+    "dependencies": {
+       "requirejs":"2.3.2npm"
+    }
+}
