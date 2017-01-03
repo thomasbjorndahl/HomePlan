@@ -1,10 +1,10 @@
 requirejs.config({
-    baseUrl: 'lib',
+    baseUrl: '',
     paths: {
-        app: '../app'
+        app: 'features'
     }
 });
 
 // Start loading the main app file. Put all of
 // your application logic in there.
-requirejs(['app/features']);
+requirejs(['/src/scripts/angular/angular.js','app/app.module']);

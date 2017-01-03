@@ -21,7 +21,7 @@ gulp.task('copyRequire', function(){
 });
 
 gulp.task('copyAngular', function(){
-    return gulp.src(nm + '/angular/angular.js')
+    return gulp.src([nm + '/angular/angular.js', nm + '/angular-route/angular-route.js'])
         .pipe(gulp.dest(folders.scripts + '/angular/'));
 });
 
