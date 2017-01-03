@@ -1,12 +1,19 @@
 {
-    "name" : "Homeplan",
-    "version": "1.0",
-    "description": "A home planner for the family",
-    "author": {
-        "email": "microsoft@vare.no",
-        "name": "Thomas Bjørndahl"
-    },
-    "dependencies": {
-       "requirejs":"2.3.2npm"
-    }
+  "name": "Homeplan",
+  "version": "1.0.0",
+  "description": "A home planner for the family",
+  "author": {
+    "email": "microsoft@vare.no",
+    "name": "Thomas Bjørndahl"
+  },
+  "repository": {},
+  "license": "UNLICENSED",
+  "dependencies": {
+    "requirejs": "2.3.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "requirejs": "^2.3.2"
+  }
 }
