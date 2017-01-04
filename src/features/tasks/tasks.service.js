@@ -74,6 +74,10 @@
                 persons: [1, 2, 3],
                 title: 'Kvelsmat og sengetid',
                 type: 5
+            }, {
+                persons: [4],
+                title: 'Lese Astrix for gutta og Elise',
+                type: 5
             }]);
             return def.promise;
         }

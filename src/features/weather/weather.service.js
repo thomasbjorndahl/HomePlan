@@ -10,7 +10,12 @@
 
         //http://www.yr.no/sted/Norge/Buskerud/Kongsberg/Gamlegrend%C3%A5sen/varsel.xml
         return {
+		getWeatherInfo: getWeatherInfo
         }
+
+	function getWeatherInfo(){
+
+	}
     }
 
 })();
