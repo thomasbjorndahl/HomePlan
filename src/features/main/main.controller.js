@@ -5,8 +5,9 @@
         .module('app')
         .controller('mainController', mainController);
 
-    mainController.$inject = ['familyService','taskService'];
-    function mainController(familyService, taskService) {
+    mainController.$inject = ['familyService', 'taskService', 'weatherService'];
+
+    function mainController(familyService, taskService, weatherService) {
         var vm = this;
         vm.peopleTasks = peopleTasks;
 
@@ -16,7 +17,10 @@
 
         function activate() { 
             getFamily();
-            
+            weatherService.getWeatherInfo()
+                .then(function (data) {
+
+                });
         }
 
         function getFamily(){

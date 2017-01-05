@@ -44,7 +44,7 @@
                         name: 'Mari',
                         birthday: new Date(1977, 0, 24),
                         color: '#efc6c6',
-                        showTasks: true
+                        showTasks: false
                     },
                     {
                         id: 5,
